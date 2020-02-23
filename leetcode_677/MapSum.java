@@ -1,6 +1,9 @@
-import java.util.TreeMap;
+package tmp;
+import java.util.*;
 
-public class MapSum {
+class MapSum {
+
+
 
     private class Node{
         // isWord可以用value得以观察
@@ -47,18 +50,40 @@ public class MapSum {
             }
             cur = cur.next.get(c);
         }
-
+        // 此时到达前缀的最后一个节点
         return sum(cur);
 
     }
 
+    //sum 的遍历是到达cur节点通过递归直接到达Trie树的最低端向上走
     private int sum( Node node){
 
+
         int res = node.value;
-        for (char c : node.next.keySet()){
+
+        for ( char c : node.next.keySet()){
             res += sum(node.next.get(c));
         }
+
+        System.out.print(res+" ");
         return res;
+
+    }
+
+    public static void main(String[] args){
+        int sum =0;
+        MapSum mapsum = new MapSum();
+
+        mapsum.insert("appletree",7);
+        mapsum.insert("apple",5);
+        mapsum.insert("app",3);
+
+        sum = mapsum.sum("ap");
+
+        System.out.println("SUM: "+sum);
+
+
+        System.out.println("Hello World.");
     }
 }
 
