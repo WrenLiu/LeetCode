@@ -10,7 +10,8 @@ class Solution {
     public ListNode swapPairs(ListNode head) {
         return swap( head);
     }
-
+    //一共三个节点:head, next, swapPairs(next.next)
+    //下面的任务便是交换这3个节点中的前两个节点
     private ListNode swap(ListNode node){
         if(node == null || node.next == null){
             return node;
