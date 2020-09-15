@@ -1,20 +1,39 @@
-class Solution {
-    public int climbStairs(int n) {
+import java.util.ArrayList;
+import java.util.Scanner;
 
-        int[] arr = new int[n+1];
-        return climb(n, arr);
+import jdk.internal.jshell.tool.resources.version;
+import jdk.internal.util.xml.impl.Input;
+
+class Solution {
+
+    static String[] usernames = {"zhangsan","lisi","wangwu"};
+    // ArrayList<String> usernames = new ArrayList<>();
+
+
+    public static void main(String[] args)throws registerException {
+        // 使用Scanner获取用户输入的注册的用户名
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入：");
+        String Inputname = sc.nextLine();
+        checkName(Inputname);
     }
 
-    private int climb(int n , int[] arr){
-
-        arr[0] = 1;
-        arr[1] = 1;
-        
-        // 爬楼梯问题，动态规划解决
-        for(int i =2;i<=n ;i++){
-            arr[i] = arr[i-1]+arr[i-2];
+    // 定义一个方法，对用户输入的用户名进行判断
+    public static void checkName (String inputName)throws registerException{
+        for(String str : usernames){
+            if(str.equals(inputName)){
+                try{
+                    throw new registerException("用户名已存在");
+                }catch(registerException e){
+                    e.printStackTrace();
+                    return ;
+                }
+            }
         }
 
-        return arr[n];
+        System.out.println("注册成功");
     }
+
+
+
 }
