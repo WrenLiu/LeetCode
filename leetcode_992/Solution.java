@@ -41,6 +41,7 @@ public class Solution {
             right ++;
 
 
+            // 相当于一个拦截器，拦下所有不符合的left，如果没有一个符合最后的结果就是0（right = left）
             while(hashMap.size() > k){
 
                 hashMap.put(nums[left],hashMap.get(nums[left])-1);
