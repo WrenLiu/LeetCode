@@ -33,7 +33,7 @@ public class Solution {
 
         while(right < nums.length){
 
-            if (hashMap.containsKey(nums[right]) == true) {
+            if (hashMap.containsKey(nums[right])) {
                 hashMap.put(nums[right], hashMap.get(nums[right]) + 1);
             } else {
                 hashMap.put(nums[right], 1);
