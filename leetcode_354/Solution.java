@@ -1,9 +1,7 @@
-
-
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class Solution354 {
+public class Solution {
 
     public static void main(String[] args) {
         int[][] envelopes = {{5,4},{6,4},{6,7},{2,3}};
