@@ -1,9 +1,8 @@
-package WebTest.Offer.chap03;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 
-public class Offer24 {
+public class Solution {
 
     public static class ListNode24 {
         int val;

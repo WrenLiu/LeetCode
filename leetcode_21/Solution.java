@@ -1,8 +1,7 @@
-package WebTest.Offer.chap03;
 
 import java.util.HashMap;
 
-public class Offer25 {
+public class Solution {
 
     public static class ListNode25 {
         int val;

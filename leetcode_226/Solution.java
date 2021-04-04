@@ -1,8 +1,8 @@
-package WebTest.Offer.chap04;
+
 
 import DataStruct.ThreadedBinaryTree.TreeNode;
 
-public class Offer27 {
+public class Solution {
 
     public static class TreeNode27 {
         int val;
