@@ -6,7 +6,6 @@ public class Solution {
 
         System.out.println(rob(nums));
 
-
     }
 
     public static int rob(int[] nums) {
