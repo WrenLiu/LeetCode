@@ -1,0 +1,12 @@
+{
+    "[java]": {
+
+        "editor.suggest.snippetsPreventQuickSuggestions": true
+    },
+    "[markdown]": {
+
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": true
+    },
+    "editor.quickSuggestions": null
+}
