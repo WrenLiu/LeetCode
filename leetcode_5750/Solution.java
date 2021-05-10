@@ -8,7 +8,6 @@ public class Solution {
 
     public static void main(String[] args) {
 
-
         int[][] nums = {{2008,2026},{2004,2008},{2034,2035},{1999,2050},{2049,2050},{2011,2035},{1966,2033},{2044,2049}};
 
         System.out.println(maximumPopulation(nums));
