@@ -50,9 +50,6 @@ public class Solution {
 
         return true;
 
-
-
-
     }
 
     private static void midshow (TreeNode872 node,ArrayList<Integer> arr){
